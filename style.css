@@ -2,13 +2,9 @@
   --color_primario: #124153;
   --color_primario_suave: #124153;
   --color_blanco: #fff;
-  --altura_header: 85px;
+  --altura_header: 80px;
   --padding_left_right: 2rem;
   --ancho_maximo: 1200px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 * {
@@ -21,7 +17,6 @@ body {
   background-color: #cecbba;
   font-family: Arial, sans-serif;
   color: #fff;
-  position: relative;
 }
 
 header {
@@ -34,53 +29,6 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-}
-
-.label-hamburguesa {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.list-icon {
-  fill: white;
-}
-
-.ul-links {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  position: absolute;
-  top: var(--altura_header);
-  right: 0;
-  background: #444;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--color_primario_suave);
-  gap: 3rem;
-  padding: 1rem;
-  transition: all 0.3s;
-}
-
-.ul-links.show {
-  display: flex;
-}
-
-.li-links {
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.link {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.link:hover {
-  color: #f0a500;
 }
 
 .container {
@@ -113,11 +61,7 @@ header {
 
 /* Hero Section */
 .hero {
-<<<<<<< HEAD
   height: 70vh;
-=======
-  height: calc(100vh - 85px);
->>>>>>> 53f370bf23ace0e906abce735a6dddbe3e54cc5d
   background-image: url("img/imagen\ principal.jpg"); /* Reemplaza con la imagen real */
   background-size: cover;
   background-position: center;
@@ -150,32 +94,30 @@ header {
   margin-bottom: 20px;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
-ol,
-ul {
+ol,ul{
   list-style: none;
 }
 
 .headerr {
   height: var(--altura_header);
   background-color: var(--color_primario);
-  position: sticky;
-  top: 0;
+  
 }
 
 .navbar {
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 var(--padding_left_right);
 }
 
-.menu-hamburguesa {
+.menu-hamburguesa{
   display: none;
 }
 
@@ -183,23 +125,40 @@ ul {
   height: calc(100vh - var(--altura_header));
 }
 
+.label-hamburguesa{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 .list-icon {
   color: var(--color_blanco);
   cursor: pointer;
 }
 
-.menu-hamburguesa:checked ~ .ul-links {
-  display: block;
+.ul-links {
+  width: 100%;
+  background-color: var(--color_primario_suave);
+  position: absolute;
+  top: var(--altura_header);
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  /* height: calc(100vh - var(--altura_header)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all .3s;
 }
 
-.li-links {
+.li-links{
+  
 }
 
 .link {
   font-size: 3rem;
   color: var(--color_blanco);
   font-weight: bold;
-  padding: 0.5rem;
 }
 
 /* Navigation */
@@ -286,12 +245,10 @@ nav ul li a:hover {
   text-align: center;
   min-width: 300px;
   flex: 1;
-  background: white;
 }
 
 .card img {
   width: 100%;
-  object-fit: cover;
   height: 300px;
 }
 
@@ -378,6 +335,7 @@ nav ul li a:hover {
 }
 
 .card-container {
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -420,10 +378,7 @@ nav ul li a:hover {
   background-color: #f0a500;
 }
 
-<<<<<<< HEAD
 /* Form Section */
-=======
->>>>>>> 53f370bf23ace0e906abce735a6dddbe3e54cc5d
 .form-container {
   background-color: #fff;
   padding: 20px;
@@ -516,6 +471,7 @@ nav ul li a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   flex: 1;
+  width: 600px;
 }
 
 .course-card img {
@@ -735,40 +691,25 @@ nav ul li a:hover {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.ul-links {
-  display: none;
-}
-
-@media (min-width: 1000px) {
-  header {
-    justify-content: flex-start;
-  }
-
   .label-hamburguesa {
     display: none;
   }
 
-  .ul-links {
+  .ul-links{
     position: static;
     width: auto;
     height: auto;
     flex-direction: row;
     gap: 2rem;
-    display: flex;
   }
-  .link {
+  .link{
     font-size: 2rem;
-    transition: all 0.3s;
+    transition: all .3s;
+    padding: 1.2rem 6rem;
   }
-  .link:hover {
+  .link:hover{
     border-radius: 5rem;
     background-color: rgba(92, 145, 163, 0.2);
-  }
-  .navbar {
-    justify-content: center;
-    height: 85px;
   }
 }
 
@@ -800,4 +741,5 @@ nav ul li a:hover {
   .card-large img {
     width: 100%;
   }
+ 
 }
