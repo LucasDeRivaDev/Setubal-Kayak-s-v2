@@ -61,7 +61,7 @@ header {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 70vh;
   background-image: url("img/imagen\ principal.jpg"); /* Reemplaza con la imagen real */
   background-size: cover;
   background-position: center;
@@ -328,6 +328,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Seccion de ventas de cayak's */
 .ventas {
   background-color: #5c91a3;
   text-align: center;
@@ -377,7 +378,7 @@ nav ul li a:hover {
   background-color: #f0a500;
 }
 
-
+/* Form Section */
 .form-container {
   background-color: #fff;
   padding: 20px;
